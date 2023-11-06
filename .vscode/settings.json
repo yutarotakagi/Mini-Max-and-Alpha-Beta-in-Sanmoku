@@ -8,5 +8,16 @@
         "*test.py"
     ],
     "python.testing.pytestEnabled": false,
-    "python.testing.unittestEnabled": true
+    "python.testing.unittestEnabled": true,
+
+    "[python]": {
+        // VS Code のフォーマッターとして Black Formatter 拡張を使う
+        "editor.defaultFormatter": "ms-python.black-formatter",
+        // ファイル保存時に自動でフォーマットする
+        "editor.formatOnSave": true
+    },
+    
+      // Python 拡張が提供するフォーマッター連携は無効にしておく
+    "python.formatting.provider": "none",
+    
 }
